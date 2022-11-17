@@ -4,18 +4,30 @@
   import Kevin from 'kevin';
   
   
-  export class About extends Me {
+  export class Me {
     private kevin:Kevin
     constructor (){
-     
+      
+      this.technologiesFrontend();
+      this.technologiesBackend() 
     }
     
     
-     technologies(){
-          const values = ['React/Next','Angular','Laravel','']
+     technologiesFrontend(){
+          const frontend = ['React','Angular','Next']
      
-          this.kevin.
+          frontend.forEach((value) => {
+              this.kevin.frontend.push(value);
+          })
      
+     }
+     
+     
+     technologiesBackend(){
+          const backend = ['Node','Laravel','Php','']
+          backend.forEach((value) => {
+              this.kevin.backend.push(value);
+          })
      }
     
  
